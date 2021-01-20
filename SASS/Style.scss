@@ -1,3 +1,8 @@
+
+$primary:#9356DC;
+$secondaire:#FF79DA;
+$Tertiaire:#99E2D0;
+
 body{
     font-family: 'Roboto', sans-serif;
     display: flex;
@@ -11,9 +16,13 @@ a{
     color: white;
 }
 
-h2{
+.titre{
     font-family: 'Shrikhand', cursive;
     font-weight: bold;
+}
+
+h2{
+    font-weight: 700;
 }
 
 .logo{
@@ -37,6 +46,11 @@ header{
     .fas{
         margin-right: 10px;
     }
+    input{
+        border-style: none;
+        background-color: #eaeaea;
+        text-align: center;
+    }
 }
 
 /*Explorer*/
@@ -54,11 +68,27 @@ header{
            padding:10px;
            border-radius: 20px;
            color: white;
-           background: linear-gradient(#FF79DA,#9356DC);
+           background: linear-gradient($secondaire,$primary);
            border-style: none;
     }
 }
 
+/*Steps Fonctionnement*/
+
+
+.box_steps {
+    padding: 0 5% 0 5%;
+        div{
+            display: flex;
+            align-items: center;
+         }
+        .number_steps{
+            padding: 10px;
+            color: white;
+            background-color: $primary;
+            clip-path:circle(40%);
+        }
+}
 
 
 /*Section footer*/
