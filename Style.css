@@ -3,12 +3,15 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0%;
+  width: 100%;
+  padding: 2%;
+  overflow-x: hidden;
 }
 
 a {
   text-decoration: none;
   color: white;
+  width: max-content;
 }
 
 .titre {
@@ -29,14 +32,20 @@ header {
   padding-top: 20px;
 }
 
+/*First Section*/
+.first_section {
+  width: 109%;
+}
+
 /*Localisation*/
 .localisation {
-  margin: 10px 0px 0px 0;
+  width: 100%;
+  padding: 10px 0px 0px 0;
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: bold;
-  width: 100%;
+  padding: 20px 0 20px 0;
   background-color: #eaeaea;
 }
 .localisation .fas {
@@ -53,6 +62,7 @@ header {
   padding: 5%;
   display: flex;
   flex-direction: column;
+  align-items: center;
   text-align: center;
   background-color: #f6f6f6;
 }
@@ -61,33 +71,53 @@ header {
   margin: 0%;
 }
 .explorer .btn_explorer {
-  padding: 10px;
-  border-radius: 20px;
+  width: max-content;
+  padding: 15px;
+  border-radius: 30px;
   color: white;
   background: linear-gradient(#FF79DA, #9356DC);
   border-style: none;
+}
+.explorer .btn_explorer:hover {
+  cursor: pointer;
 }
 
 /*Steps Fonctionnement*/
 .box_steps {
   padding: 0 5% 0 5%;
 }
-.box_steps div {
+.box_steps .steps {
   display: flex;
   align-items: center;
+  margin: 20px 0 20px 4%;
+  background-color: #f6f6f6;
+  border-radius: 20px;
+  box-shadow: 0px 5px 10px 1px rgba(0, 0, 0, 0.1);
 }
 .box_steps .number_steps {
   padding: 10px;
   color: white;
   background-color: #9356DC;
   clip-path: circle(40%);
+  position: relative;
+  left: -15px;
+}
+.box_steps .fa-store {
+  color: #9356DC;
+}
+.box_steps .fas {
+  margin-right: 20px;
+}
+
+#last_step {
+  background-color: #f2eafb;
 }
 
 /*Section footer*/
 footer {
   background-color: #353535;
   color: white;
-  width: 100%;
+  width: 104%;
   padding: 0 20px 20px 0;
 }
 footer .text_footer {

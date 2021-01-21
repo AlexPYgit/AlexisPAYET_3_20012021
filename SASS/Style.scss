@@ -3,17 +3,21 @@ $primary:#9356DC;
 $secondaire:#FF79DA;
 $Tertiaire:#99E2D0;
 
+
 body{
     font-family: 'Roboto', sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0%;
+    width: 100%;
+    padding: 2%;
+    overflow-x: hidden;
 }
 
 a{
     text-decoration: none;
     color: white;
+    width: max-content;
 }
 
 .titre{
@@ -34,14 +38,21 @@ header{
     padding-top: 20px;
 }
 
+/*First Section*/
+.first_section{
+    width: 109%;
+}
+
 /*Localisation*/
 .localisation{
-    margin:10px 0px 0px 0;
+    width: 100%;
+    padding:10px 0px 0px 0;
     display: flex;
     align-items: center;
     justify-content: center;
     font-weight: bold;
-    width: 100%;
+    
+    padding: 20px 0 20px 0;
     background-color: #eaeaea;
     .fas{
         margin-right: 10px;
@@ -58,6 +69,7 @@ header{
     padding: 5%;
     display: flex;
     flex-direction: column;
+    align-items: center;
     text-align: center;
     background-color: #f6f6f6;
         h1{
@@ -65,37 +77,58 @@ header{
             margin: 0%;
     }
         .btn_explorer{
-           padding:10px;
-           border-radius: 20px;
+           width: max-content;
+           padding:15px;
+           border-radius: 30px;
            color: white;
            background: linear-gradient($secondaire,$primary);
            border-style: none;
-    }
+           &:hover{
+               cursor: pointer;
+           }
+        }
+
+        
+        
 }
 
 /*Steps Fonctionnement*/
-
-
 .box_steps {
     padding: 0 5% 0 5%;
-        div{
+        .steps{
             display: flex;
             align-items: center;
+            margin: 20px 0 20px 4%;
+            background-color: #f6f6f6;
+            border-radius: 20px;
+            box-shadow: 0px 5px 10px 1px rgba($color: #000000, $alpha: 0.1);
          }
         .number_steps{
             padding: 10px;
             color: white;
             background-color: $primary;
             clip-path:circle(40%);
+            position: relative;
+            left: -15px;
+           
+        }
+        .fa-store{
+            color: $primary;
+        }
+        .fas{
+            margin-right: 20px;
         }
 }
 
+#last_step{
+    background-color:lighten($color: $primary, $amount: 35%);
+}
 
 /*Section footer*/
 footer{
     background-color: #353535;
     color: white;
-    width: 100%;
+    width: 104%;
     padding: 0 20px  20px 0;
         .text_footer{
             display: flex;
@@ -105,6 +138,6 @@ footer{
                     filter: invert(1);
                     width: 100px;
                     margin: 20px 0 20px 0 ;
-    }
+        }
     }
 }
