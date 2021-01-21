@@ -34,7 +34,7 @@ header {
 
 /*First Section*/
 .first_section {
-  width: 109%;
+  width: 113%;
 }
 
 /*Localisation*/
@@ -113,11 +113,54 @@ header {
   background-color: #f2eafb;
 }
 
+/*Section Restaurant*/
+.restaurant {
+  width: 105%;
+  background-color: #f6f6f6;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+}
+
+.cards {
+  width: 95%;
+  margin: 20px;
+  height: 15em;
+  color: black;
+  background-color: white;
+  border-radius: 20px;
+}
+.cards .img_cards {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+}
+.cards .text_cards {
+  background-color: white;
+  border-radius: 0 0 20px 20px;
+  height: 20%;
+  padding: 20px 20px 0 20px;
+  line-height: 0.4em;
+  display: flex;
+  justify-content: space-between;
+}
+.cards .text_cards h4 {
+  margin: 0%;
+}
+.cards .text_cards .far {
+  color: red;
+  border-style: none;
+}
+.cards .text_cards .far:hover {
+  filter: invert(1);
+}
+
 /*Section footer*/
 footer {
   background-color: #353535;
   color: white;
-  width: 104%;
+  width: 109%;
   padding: 0 20px 20px 0;
 }
 footer .text_footer {
