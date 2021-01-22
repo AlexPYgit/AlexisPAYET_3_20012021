@@ -2,6 +2,7 @@
 $primary:#9356DC;
 $secondaire:#FF79DA;
 $Tertiaire:#99E2D0;
+$color_icon:(background:linear-gradient($secondaire,$primary));
 
 
 body{
@@ -128,15 +129,23 @@ header{
     padding: 5%;
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+
+.box_cards a{
+    border: 1px solid #f6f6f6;
 }
 
 .cards{
-    width: 95%;
+    width: 90%;
     margin: 20px;
-    height: 15em;
+    margin-bottom: 20px;
+    height: 20em;
     color: black;
     background-color: white;
     border-radius: 20px;
+    position: relative;top:0px;left:0px;
+    box-shadow: 0px 30px 10px 1px rgba($color: black, $alpha: 0.2);
 
    .img_cards{
        width: 100%;
@@ -155,13 +164,27 @@ header{
        h4{
         margin: 0%;
        }
-       .far{
-           color:red;
-           border-style: none;
-           &:hover{
-               filter: invert(1);
+       .far:hover{
+           display: none;
+           & + .fa-heart{
+               display: block;
+               color: $primary;
            }
-       }
+        }
+       .fas{
+           display: none;
+        }
+    }
+    .etiquette{
+        position: absolute;
+        top: 15px;
+        right:10px;
+        z-index: 4;
+        background-color: $Tertiaire;
+        padding: 10px;
+        border-radius: 5px;
+        font-weight: bold;
+        color: darken($color:$Tertiaire, $amount: 35);
     }
 }
 
