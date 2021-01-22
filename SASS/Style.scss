@@ -166,7 +166,7 @@ header{
        }
        .far:hover{
            display: none;
-           & + .fa-heart{
+           + .fa-heart{
                display: block;
                color: $primary;
            }
