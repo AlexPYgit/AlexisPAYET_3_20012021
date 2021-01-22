@@ -34,7 +34,7 @@ header {
 
 /*First Section*/
 .first_section {
-  width: 113%;
+  width: 100%;
 }
 
 /*Localisation*/
@@ -115,7 +115,7 @@ header {
 
 /*Section Restaurant*/
 .restaurant {
-  width: 105%;
+  width: 100%;
   background-color: #f6f6f6;
   padding: 5%;
   display: flex;
@@ -184,7 +184,7 @@ header {
 footer {
   background-color: #353535;
   color: white;
-  width: 109%;
+  width: 100%;
   padding: 0 20px 20px 0;
 }
 footer .text_footer {
@@ -196,6 +196,38 @@ footer .text_footer #icon_footer {
   filter: invert(1);
   width: 100px;
   margin: 20px 0 20px 0;
+}
+
+/*Style version destop*/
+@media screen and (min-width: 1024px) {
+  header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  header img {
+    width: 200%;
+  }
+
+  .box_steps {
+    display: flex;
+    align-items: center;
+  }
+  .box_steps .steps {
+    padding: 0 30px 0 0;
+  }
+
+  .restaurant {
+    width: 100%;
+    background-color: red;
+  }
+
+  .box_cards {
+    display: flex;
+  }
+  .box_cards a {
+    width: 200px;
+  }
 }
 
 /*# sourceMappingURL=Style.css.map */
