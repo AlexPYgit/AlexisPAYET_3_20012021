@@ -157,6 +157,7 @@ header{
        background-color: white;
        border-radius:0 0 20px 20px;
        height: 20%;
+       width: auto;
        padding: 20px 20px 0 20px;
        line-height: 0.4em;
        display: flex;
@@ -234,8 +235,14 @@ footer{
 
     .box_cards{
         display: flex;
-        a{
-            width: 200px;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        border: 1px solid blue;
+        div{
+            width: 40%;
+        }
+        .cards{
+            width: 100%;
         }
     }
 }

@@ -150,6 +150,7 @@ header {
   background-color: white;
   border-radius: 0 0 20px 20px;
   height: 20%;
+  width: auto;
   padding: 20px 20px 0 20px;
   line-height: 0.4em;
   display: flex;
@@ -224,9 +225,15 @@ footer .text_footer #icon_footer {
 
   .box_cards {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border: 1px solid blue;
   }
-  .box_cards a {
-    width: 200px;
+  .box_cards div {
+    width: 40%;
+  }
+  .box_cards .cards {
+    width: 100%;
   }
 }
 
