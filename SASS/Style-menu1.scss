@@ -1,0 +1,21 @@
+/*Style-menu1*/
+
+h1{
+    font-family: 'Shrikhand',sans-serif;
+}
+
+header {
+    
+    a{
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    a i{
+        width: 20%;
+    }
+    a img{
+        width: 60%;
+    }
+}

@@ -1,0 +1,18 @@
+/*Style-menu1*/
+h1 {
+  font-family: "Shrikhand", sans-serif;
+}
+
+header a {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+header a i {
+  width: 20%;
+}
+header a img {
+  width: 60%;
+}
+
+/*# sourceMappingURL=Style-menu1.css.map */

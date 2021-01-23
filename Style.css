@@ -158,15 +158,16 @@ header {
 .cards .text_cards h4 {
   margin: 0%;
 }
-.cards .text_cards .far:hover {
+.cards .text_cards .far:active {
   display: none;
 }
-.cards .text_cards .far:hover + .fa-heart {
+.cards .text_cards .far:active + .fa-heart {
   display: block;
   color: #9356DC;
 }
 .cards .text_cards .fas {
   display: none;
+  z-index: 4;
 }
 .cards .etiquette {
   position: absolute;
