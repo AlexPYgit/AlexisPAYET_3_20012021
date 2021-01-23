@@ -1,7 +1,25 @@
 /*Style-menu1*/
+$primary:#9356DC;
+$secondaire:#FF79DA;
+$Tertiaire:#99E2D0;
+
 
 h1{
     font-family: 'Shrikhand',sans-serif;
+}
+
+body{
+    font-family: 'roboto';
+}
+h2{
+    font-weight: 300;
+    padding-bottom: 10px;
+    border-bottom: 2px solid $Tertiaire;
+
+}
+
+a{
+    text-decoration: none;
 }
 
 header {
@@ -19,7 +37,11 @@ header {
     }
 }
 
-section{
+.main-section{
+    background-color: #f6f6f6;
+}
+
+.head-menu{
     display: flex;
     background-image: url(https://raw.githubusercontent.com/AlexPYgit/AlexisPAYET_3_20012021/master/Maquettes%20Ohmyfood/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
     background-size:100%;
@@ -28,11 +50,34 @@ section{
     size: 100%;
     height: 20em;
     align-items: flex-end;
-    h1{
+    background-color: #f6f6f6;
+
+    .title-head{
         width: 100%;
         margin: 0%;
         padding: 40px 20px 0 20px;
         border-radius: 40px 40px 0 0;
         background-color: #f6f6f6;
+    }
+}
+
+/*Section footer*/
+footer{
+    background-color: #353535;
+    color: white;
+    width: 100%;
+    padding: 0 20px  20px 0;
+        .text_footer{
+            display: flex;
+            flex-direction: column;
+            padding-left: 5%;
+            a{
+                color: white;
+            }
+                #icon_footer{
+                    filter: invert(1);
+                    width: 100px;
+                    margin: 20px 0 20px 0 ;
+        }
     }
 }
