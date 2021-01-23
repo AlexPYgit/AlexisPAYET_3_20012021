@@ -5,17 +5,34 @@ h1{
 }
 
 header {
-    
+    padding: 20px;
     a{
         width: 100%;
         display: flex;
+        justify-content: center;
         align-items: center;
+        position: relative;left:0px;top:0px;
+        i{
+            position: absolute;
+            left: 10px;
+        }
     }
+}
 
-    a i{
-        width: 20%;
-    }
-    a img{
-        width: 60%;
+section{
+    display: flex;
+    background-image: url(https://raw.githubusercontent.com/AlexPYgit/AlexisPAYET_3_20012021/master/Maquettes%20Ohmyfood/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+    background-size:100%;
+    background-position: center;
+    object-fit: cover;
+    size: 100%;
+    height: 20em;
+    align-items: flex-end;
+    h1{
+        width: 100%;
+        margin: 0%;
+        padding: 40px 20px 0 20px;
+        border-radius: 40px 40px 0 0;
+        background-color: #f6f6f6;
     }
 }
