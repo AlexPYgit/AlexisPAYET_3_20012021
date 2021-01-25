@@ -1,0 +1,11 @@
+.btn_background{
+    width: max-content;
+    padding:15px;
+    border-radius: 30px;
+    color: white;
+    background: linear-gradient($secondaire,$primary);
+    border-style: none;
+    &:hover{
+        cursor: pointer;
+    }
+ }

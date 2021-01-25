@@ -57,6 +57,18 @@ header a i {
   background-color: #f6f6f6;
 }
 
+.btn_background {
+  width: max-content;
+  padding: 15px;
+  border-radius: 30px;
+  color: white;
+  background: linear-gradient(#FF79DA, #9356DC);
+  border-style: none;
+}
+.btn_background:hover {
+  cursor: pointer;
+}
+
 /*Section footer*/
 footer {
   background-color: #353535;
