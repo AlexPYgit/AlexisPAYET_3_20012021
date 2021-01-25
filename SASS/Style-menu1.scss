@@ -43,6 +43,11 @@ header {
     background-color: #f6f6f6;
 }
 
+.border{
+padding: 0 20px 0 20px;
+}
+
+
 .head-menu{
     display: flex;
     background-image: url(https://raw.githubusercontent.com/AlexPYgit/AlexisPAYET_3_20012021/master/Maquettes%20Ohmyfood/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
@@ -61,6 +66,47 @@ header {
         border-radius: 40px 40px 0 0;
         background-color: #f6f6f6;
     }
+}
+
+/*Section plats*/
+.section-plats{
+    border: 1px solid black;
+}
+
+
+
+/*Entrées*/
+.container-entrées{
+    width: 100%;
+    .entrées{
+        width: 100%;
+        height: 5em;
+        background-color: white;
+        border-radius: 15px;
+        margin-bottom: 10px;
+        line-height: 0.5em;
+        box-shadow: 0px 5px 10px 1px rgba($color: #000000, $alpha: 0.1);
+        border: 1px solid black;
+        .title-cards{
+            margin: 15px;
+        }
+        .text-cards{
+            display: flex;
+            justify-content: space-between;
+            margin: 15px
+        }
+    }
+}
+
+.animation{
+    display: flex;
+    height: 100%;
+    border: 1px solid red;
+}
+.validation{
+    background-color: $Tertiaire;
+    height: 5em;
+    width: 70px;
 }
 
 @import "libs/btn-background.scss";
