@@ -3,7 +3,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  overflow-x: hidden;
+  margin: 0%;
 }
 
 a {
@@ -78,7 +78,6 @@ header {
 }
 .explorer .btn_explorer:hover {
   cursor: pointer;
-
 }
 
 /*Steps Fonctionnement*/
@@ -122,6 +121,14 @@ header {
   align-items: center;
 }
 
+.border-cards {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  border: 1px solid black;
+  margin: 0%;
+}
+
 .box_cards {
   display: block;
   width: 90%;
@@ -140,13 +147,15 @@ header {
   left: 0px;
   box-shadow: 0px 30px 10px 1px rgba(0, 0, 0, 0.2);
 }
-.cards .img_cards {
+
+.img_cards {
   width: 100%;
   height: 80%;
   object-fit: cover;
   border-radius: 20px 20px 0 0;
 }
-.cards .text_cards {
+
+.text_cards {
   background-color: white;
   border-radius: 0 0 20px 20px;
   height: 20%;
@@ -156,21 +165,44 @@ header {
   display: flex;
   justify-content: space-between;
 }
-.cards .text_cards h4 {
+.text_cards h4 {
   margin: 0%;
 }
-.cards .text_cards .far:active {
+.text_cards .far:active {
   display: none;
 }
-.cards .text_cards .far:active + .fa-heart {
+.text_cards .far:active + .fa-heart {
   display: block;
-  color: #9356DC;
 }
-.cards .text_cards .fas {
+.text_cards .fas {
   display: none;
+}
+
+.fa-gradient {
+  display: block;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.icon-transform {
+  position: absolute;
+  right: 30px;
+  bottom: 60px;
   z-index: 4;
 }
-.cards .etiquette {
+.icon-transform .fas {
+  display: none;
+}
+.icon-transform .far:active {
+  display: none;
+}
+.icon-transform .far:active + .fa-heart {
+  display: block;
+}
+
+/*https://stackoverflow.com/questions/12732663/text-gradient-with-font-awesome lien pour les icon gradient*/
+.etiquette {
   position: absolute;
   top: 15px;
   right: 10px;
@@ -230,9 +262,16 @@ footer .text_footer #icon_footer {
     display: flex;
     justify-content: space-around;
   }
-  .box_cards a {
+  .box_cards .link-cards {
     width: 30%;
     margin: 0 5px 0 5px;
+  }
+
+  .icon-transform {
+    position: absolute;
+    right: 30px;
+    bottom: 80px;
+    z-index: 4;
   }
 }
 
