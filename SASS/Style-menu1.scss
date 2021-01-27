@@ -58,7 +58,6 @@ padding: 0 20px 0 20px;
     height: 20em;
     align-items: flex-end;
     background-color: #f6f6f6;
-
     .title-head{
         width: 100%;
         margin: 0%;
@@ -78,35 +77,69 @@ padding: 0 20px 0 20px;
 /*Entrées*/
 .container-entrées{
     width: 100%;
+    overflow: hidden;
     .entrées{
         width: 100%;
         height: 5em;
         background-color: white;
         border-radius: 15px;
         margin-bottom: 10px;
-        line-height: 0.5em;
         box-shadow: 0px 5px 10px 1px rgba($color: #000000, $alpha: 0.1);
-        border: 1px solid black;
-        .title-cards{
-            margin: 15px;
+        border: 1px solid yellow;
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        flex-wrap: nowrap;
         }
-        .text-cards{
-            display: flex;
-            justify-content: space-between;
-            margin: 15px
-        }
+}
+
+.entrées:hover{
+    .validation{
+    transform: translate(-70px); 
+    }
+    .container-text{
+        width: calc(100% - 70px);
+        transition: 0.5s;
+    }
+    .fa-check-circle{
+        transform: rotate(360deg);
+        transition: 0.5s;
     }
 }
 
-.animation{
+.container-text{
     display: flex;
+    flex-direction: column;
     height: 100%;
-    border: 1px solid red;
+    width: 100%;
+    line-height: 0.5em;
+    transition: 1s;
+    .title-cards{
+        margin: 15px;
+    }
+    .text-cards{
+        display: flex;
+        justify-content: space-between;
+        margin: 15px;
+    }
 }
+
 .validation{
     background-color: $Tertiaire;
     height: 5em;
     width: 70px;
+    border-radius: 0 15px 15px 0;
+    transition:transform 0.5s;
+    position: absolute;
+    right: -70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .fa-check-circle{
+        color: white;
+        transform:rotate (0deg);
+        transition: 0.5s;
+    }
 }
 
 @import "libs/btn-background.scss";
