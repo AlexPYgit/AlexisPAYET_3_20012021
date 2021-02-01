@@ -14,7 +14,6 @@ body{
 
 a{
     text-decoration: none;
-    color: white;
     width: max-content;
 }
 
@@ -169,9 +168,9 @@ header{
        h4{
         margin: 0%;
        }
-       .far:active{
+       .far:hover{
            display: none;
-           + .fa-heart{
+           + .fas{
                display: block;
            }
         }
@@ -191,20 +190,45 @@ header{
         right: 30px;
         bottom:60px;
         z-index: 4;
-        .fas{
-            display: none;
+        .far{
+            background-color: white;
+            position: absolute;
         }
-        .far:active{
-                 display: none;
-                + .fa-heart{
-                     display: block;
-                }
-                }
-             }
+    }
+#proof-1{
+    display: none;
+}
+#proof-1:checked {
+    + #cube1{
+    display: none;}
+}
+#proof-2{
+    display: none;
+}
+#proof-2:checked {
+    + #cube3{
+    display: none;}
+}
+#proof-3{
+    display: none;
+}
+#proof-3:checked {
+    + #cube5{
+    display: none;}
+}
+#proof-4{
+    display: none;
+}
+#proof-4:checked {
+    + #cube7{
+    display: none;}
+}
+
+     
         
-    
-    
-/*https://stackoverflow.com/questions/12732663/text-gradient-with-font-awesome lien pour les icon gradient*/
+             /*https://codepen.io/Chesswithsean/post/click-in-pure-css lien pour changer l'icon au clic
+    https://enmascript.com/articles/2019/09/26/toggle-content-on-click-without-javascript lien pour changer l'icon au click
+https://stackoverflow.com/questions/12732663/text-gradient-with-font-awesome lien pour les icon gradient*/
     .etiquette{
         position: absolute;
         top: 15px;
@@ -234,6 +258,9 @@ footer{
                     margin: 20px 0 20px 0 ;
         }
     }
+}
+.style-footer{
+    color: white;
 }
 
 /*Style version destop*/

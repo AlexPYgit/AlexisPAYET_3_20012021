@@ -8,7 +8,6 @@ body {
 
 a {
   text-decoration: none;
-  color: white;
   width: max-content;
 }
 
@@ -168,10 +167,10 @@ header {
 .text_cards h4 {
   margin: 0%;
 }
-.text_cards .far:active {
+.text_cards .far:hover {
   display: none;
 }
-.text_cards .far:active + .fa-heart {
+.text_cards .far:hover + .fas {
   display: block;
 }
 .text_cards .fas {
@@ -191,17 +190,46 @@ header {
   bottom: 60px;
   z-index: 4;
 }
-.icon-transform .fas {
-  display: none;
-}
-.icon-transform .far:active {
-  display: none;
-}
-.icon-transform .far:active + .fa-heart {
-  display: block;
+.icon-transform .far {
+  background-color: white;
+  position: absolute;
 }
 
-/*https://stackoverflow.com/questions/12732663/text-gradient-with-font-awesome lien pour les icon gradient*/
+#proof-1 {
+  display: none;
+}
+
+#proof-1:checked + #cube1 {
+  display: none;
+}
+
+#proof-2 {
+  display: none;
+}
+
+#proof-2:checked + #cube3 {
+  display: none;
+}
+
+#proof-3 {
+  display: none;
+}
+
+#proof-3:checked + #cube5 {
+  display: none;
+}
+
+#proof-4 {
+  display: none;
+}
+
+#proof-4:checked + #cube7 {
+  display: none;
+}
+
+/*https://codepen.io/Chesswithsean/post/click-in-pure-css lien pour changer l'icon au clic
+    https://enmascript.com/articles/2019/09/26/toggle-content-on-click-without-javascript lien pour changer l'icon au click
+https://stackoverflow.com/questions/12732663/text-gradient-with-font-awesome lien pour les icon gradient*/
 .etiquette {
   position: absolute;
   top: 15px;
@@ -230,6 +258,10 @@ footer .text_footer #icon_footer {
   filter: invert(1);
   width: 100px;
   margin: 20px 0 20px 0;
+}
+
+.style-footer {
+  color: white;
 }
 
 /*Style version destop*/
