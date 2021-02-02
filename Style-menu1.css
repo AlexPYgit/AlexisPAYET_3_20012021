@@ -16,8 +16,12 @@ body {
 
 h2 {
   font-weight: 300;
+  font-size: 1em;
   padding-bottom: 10px;
-  border-bottom: 2px solid #99E2D0;
+  border-bottom: 4px solid #99E2D0;
+  width: 40px;
+  margin-left: 25px;
+  text-transform: uppercase;
 }
 
 a {
