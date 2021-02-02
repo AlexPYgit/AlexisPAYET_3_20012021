@@ -87,6 +87,11 @@ header a i {
   position: relative;
   display: flex;
   flex-wrap: nowrap;
+  animation-play-state: running;
+  animation-duration: 1s;
+  animation-name: slide;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
 .choice:hover .validation {
