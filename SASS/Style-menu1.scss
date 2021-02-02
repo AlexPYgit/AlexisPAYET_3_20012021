@@ -18,6 +18,7 @@ h1{
 
 body{
     font-family: 'roboto';
+    margin: 0%;
 }
 h2{
     font-weight: 300;
@@ -47,6 +48,7 @@ header {
 
 .main-section{
     background-color: #f6f6f6;
+    width: 100%;
 }
 
 .border{
@@ -57,34 +59,32 @@ padding: 0 20px 0 20px;
 .head-menu{
     display: flex;
     background-image: url(https://raw.githubusercontent.com/AlexPYgit/AlexisPAYET_3_20012021/master/Maquettes%20Ohmyfood/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
-    background-size:100%;
-    background-position: center;
-    object-fit: cover;
+    background-size:105%;
+    background-position:top right;
+    background-repeat: no-repeat;
     size: 100%;
-    height: 20em;
+    height: 17.5em;
     align-items: flex-end;
     background-color: #f6f6f6;
     .title-head{
         width: 100%;
         margin: 0%;
         padding: 40px 20px 0 20px;
-        border-radius: 40px 40px 0 0;
+        border-radius: 50px 50px 0 0;
         background-color: #f6f6f6;
     }
 }
 
-/*Section plats*/
-.section-plats{
-    border: 1px solid black;
-}
 
+/*Section choice*/
 
-
-/*Entrées*/
-.container-entrées{
-    width: 100%;
-    .entrées{
-        width: 100%;
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .choice{
+        width: 90%;
         height: 5em;
         background-color: white;
         border-radius: 15px;
@@ -95,9 +95,9 @@ padding: 0 20px 0 20px;
         display: flex;
         flex-wrap: nowrap;
         }
-}
 
-.entrées:hover{
+
+.choice:hover{
     .validation{
     transform: translate(-70px); 
     }
@@ -116,8 +116,7 @@ padding: 0 20px 0 20px;
     flex-direction: column;
     height: 100%;
     width: 100%;
-    line-height: 0.5em;
-    padding: 20px;
+    padding: 10px;
     transition: 1s;
     .title-cards{
         margin: 0%;
@@ -126,7 +125,18 @@ padding: 0 20px 0 20px;
         display: flex;
         justify-content: space-between;
         margin: 0%;
+        p{
+            margin-top: 2%;
+        }
+        .prix{
+            margin-left: 20px;
+        }
     }
+}
+.text-ellipsis{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .validation{
