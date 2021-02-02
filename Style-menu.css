@@ -178,7 +178,7 @@ footer {
   background-color: #353535;
   color: white;
   width: 100%;
-  padding: 0 20px 20px 0;
+  padding: 20px 0 20px 0;
 }
 footer .text_footer {
   display: flex;
@@ -191,7 +191,7 @@ footer .text_footer a {
 footer .text_footer #icon_footer {
   filter: invert(1);
   width: 100px;
-  margin: 20px 0 20px 0;
+  margin-bottom: 20px;
 }
 
 /*# sourceMappingURL=Style-menu.css.map */
