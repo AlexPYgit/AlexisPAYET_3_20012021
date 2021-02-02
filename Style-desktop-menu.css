@@ -1,0 +1,15 @@
+@media screen and (min-width: 1024px) {
+  .main-section {
+    padding-bottom: 30px;
+  }
+  #card-menu {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+  #card-menu .section-choice-menu {
+    width: 40%;
+  }
+}
+
+/*# sourceMappingURL=Style-desktop-menu.css.map */
