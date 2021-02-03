@@ -87,17 +87,33 @@ header a i {
   position: relative;
   display: flex;
   flex-wrap: nowrap;
+}
+
+.anime-1 {
   animation-name: move-choice;
-  animation-duration: 1s;
+  animation-duration: 1.5s;
+}
+
+.anime-2 {
+  animation-name: move-choice;
+  animation-duration: 1.5s;
+  animation-delay: 0.1s;
+}
+
+.anime-3 {
+  animation-name: move-choice;
+  animation-duration: 1.5s;
+  animation-delay: 0.2s;
 }
 
 @keyframes move-choice {
   from {
-    transform: translateY(100px);
-    opacity: 0.1;
+    transform: translateY(20px);
+    opacity: 0;
   }
   to {
     transform: translate(0);
+    opacity: 1;
   }
 }
 .choice:hover .validation {
