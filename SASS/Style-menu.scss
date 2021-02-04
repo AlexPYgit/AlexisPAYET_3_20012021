@@ -73,6 +73,8 @@ header {
     }
 }
 
+@import"libs/icon-heart.scss";
+
 
 /*Section choice*/
 
@@ -92,28 +94,33 @@ header {
         position: relative;
         display: flex;
         flex-wrap: nowrap;
-      
+        animation-name: move-choice;
+        animation-delay: -0.5s;
         }
         .anime-1{
             animation-name: move-choice;
-            animation-duration: 1.5s;
+            animation-duration: 0.5s;
         }
         .anime-2{
             animation-name: move-choice;
-            animation-duration: 1.5s;
+            animation-duration: 1s;
             animation-delay: 0.1s;
         }
         .anime-3{
             animation-name: move-choice;
-            animation-duration: 1.5s;
+            animation-duration: 0.5s;
             animation-delay: 0.2s;
+        }
+        .anime-4{
+            animation-name: move-choice;
+            animation-duration: 0.5s;
+            animation-delay: 0.3s;
         }
 
         @keyframes move-choice{
             from{
-                transform: translateY(20px);
+                transform: translateY(10px);
                 opacity: 0;
-
             }
             to{
                 transform: translate(0);

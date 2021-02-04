@@ -1,0 +1,29 @@
+/*set icon heart*/
+
+.fa-gradient {
+    display: block;
+    background: -webkit-gradient(linear, left top, left bottom, from($primary), to($secondaire));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.icon-transform{
+    
+    .far{
+        background-color: #f6f6f6;
+        position: absolute;
+    }
+    .far:hover{
+        cursor: pointer;
+    }
+    .fas:hover{
+        cursor: pointer;
+    }
+}
+#proof-1{
+    display: none;
+}
+#proof-1:checked {
+    + #cube1{
+    display: none;}
+}
