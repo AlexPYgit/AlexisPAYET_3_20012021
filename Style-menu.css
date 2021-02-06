@@ -1,8 +1,6 @@
 /*Style-menu1*/
 h1 {
   font-family: "Shrikhand", sans-serif;
-  display: flex;
-  justify-content: space-between;
 }
 
 #icon-h1 {
@@ -52,21 +50,30 @@ header a i {
 
 .head-menu {
   display: flex;
-  background-image: url(https://raw.githubusercontent.com/AlexPYgit/AlexisPAYET_3_20012021/master/Maquettes%20Ohmyfood/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
-  background-size: 105%;
-  background-position: top right;
-  background-repeat: no-repeat;
-  size: 100%;
-  height: 17.5em;
-  align-items: flex-end;
-  background-color: #f6f6f6;
+  flex-direction: column;
+}
+.head-menu #box-image {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  z-index: 0;
+}
+.head-menu #box-image #back-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
 }
 .head-menu .title-head {
-  width: 100%;
-  margin: 0%;
+  width: auto;
+  margin-top: -60px;
   padding: 40px 20px 0 20px;
   border-radius: 50px 50px 0 0;
   background-color: #f6f6f6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
 }
 
 /*set icon heart*/
