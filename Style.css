@@ -304,12 +304,15 @@ footer .text_footer #icon_footer {
   /*Section Restaurant & Cards*/
   .restaurant {
     background-color: white;
+    width: 98%;
+    padding: 1%;
+    text-align: center;
   }
 
   .box_cards {
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
   }
   .box_cards .border-cards {
     width: 24%;
@@ -319,6 +322,13 @@ footer .text_footer #icon_footer {
     position: absolute;
     bottom: 50px;
     z-index: 4;
+  }
+
+  footer .text_footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
   }
 }
 

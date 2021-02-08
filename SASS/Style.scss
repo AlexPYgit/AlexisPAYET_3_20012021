@@ -119,7 +119,7 @@ header {
   .fas {
     margin-right: 20px;
   }
-  .fas-color{
+  .fas-color {
     color: #7e7e7e;
   }
 }
@@ -280,10 +280,10 @@ footer {
 .style-footer {
   color: white;
   margin-bottom: 5px;
-  .fa-sm{
+  .fa-sm {
     margin-right: 10px;
   }
-  .fa-hands-helping{
+  .fa-hands-helping {
     width: 10px;
   }
 }
@@ -313,11 +313,14 @@ footer {
   /*Section Restaurant & Cards*/
   .restaurant {
     background-color: white;
+    width: 98%;
+    padding: 1%;
+    text-align: center;
   }
   .box_cards {
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     .border-cards {
       width: 24%;
     }
@@ -327,7 +330,13 @@ footer {
     bottom: 50px;
     z-index: 4;
   }
+  
   footer {
-    
+    .text_footer {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+    }
   }
 }
