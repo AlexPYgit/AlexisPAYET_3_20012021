@@ -8,6 +8,7 @@ $Tertiaire:#99E2D0;
 
 h1{
     font-family: 'Shrikhand',sans-serif;
+    font-weight: lighter;
 }
 
 #icon-h1{
@@ -92,7 +93,7 @@ header {
     }
     .choice{
         width: 90%;
-        height: 5em;
+        height: 4em;
         background-color: white;
         border-radius: 15px;
         margin-bottom: 10px;
@@ -165,12 +166,16 @@ header {
     .text-cards{
         display: flex;
         justify-content: space-between;
+        align-items: flex-end;
         margin: 0%;
         p{
             margin-top: 2%;
+            margin-bottom: 0%;
+            font-size: small;
         }
         .prix{
-            margin-left: 20px;
+            margin: 0 20px 0 20px;
+            font-weight: bold;
         }
     }
 }
@@ -219,10 +224,16 @@ footer{
             a{
                 color: white;
             }
-                #icon_footer{
-                    filter: invert(1);
-                    width: 100px;
-                    margin-bottom: 20px;
-        }
+            #icon_footer{
+                filter: invert(1);
+                width: 100px;
+                margin-bottom: 20px;
+            }
+            .link-footer{
+                margin-bottom: 10px;
+            }
+            .fa-sm{
+                width: 20px;
+            }
     }
 }

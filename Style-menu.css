@@ -1,6 +1,7 @@
 /*Style-menu1*/
 h1 {
   font-family: "Shrikhand", sans-serif;
+  font-weight: lighter;
 }
 
 #icon-h1 {
@@ -112,7 +113,7 @@ header a i {
 
 .choice {
   width: 90%;
-  height: 5em;
+  height: 4em;
   background-color: white;
   border-radius: 15px;
   margin-bottom: 10px;
@@ -185,13 +186,17 @@ header a i {
 .container-text .text-cards {
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
   margin: 0%;
 }
 .container-text .text-cards p {
   margin-top: 2%;
+  margin-bottom: 0%;
+  font-size: small;
 }
 .container-text .text-cards .prix {
-  margin-left: 20px;
+  margin: 0 20px 0 20px;
+  font-weight: bold;
 }
 
 .text-ellipsis {
@@ -233,6 +238,7 @@ header a i {
   color: white;
   background: linear-gradient(#FF79DA, #9356DC);
   border-style: none;
+  box-shadow: 0px 5px 10px 1px rgba(0, 0, 0, 0.2);
 }
 .btn_background:hover {
   cursor: pointer;
@@ -257,6 +263,12 @@ footer .text_footer #icon_footer {
   filter: invert(1);
   width: 100px;
   margin-bottom: 20px;
+}
+footer .text_footer .link-footer {
+  margin-bottom: 10px;
+}
+footer .text_footer .fa-sm {
+  width: 20px;
 }
 
 /*# sourceMappingURL=Style-menu.css.map */

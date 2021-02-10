@@ -6,6 +6,7 @@
     color: white;
     background: linear-gradient($secondaire,$primary);
     border-style: none;
+    box-shadow: 0px 5px 10px 1px rgba($color: black, $alpha: 0.2);
     &:hover{
         cursor: pointer;
     }
