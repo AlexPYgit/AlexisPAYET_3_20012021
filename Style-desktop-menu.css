@@ -6,6 +6,7 @@
   .main-section {
     padding-bottom: 30px;
   }
+
   #card-menu {
     display: flex;
     justify-content: space-between;
@@ -13,6 +14,17 @@
   }
   #card-menu .section-choice-menu {
     width: 40%;
+  }
+
+  footer .text_footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0%;
+  }
+  footer .text_footer #icon_footer {
+    margin: 0%;
   }
 }
 
