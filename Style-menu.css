@@ -197,6 +197,7 @@ header a i {
 .container-text .text-cards .prix {
   margin: 0 20px 0 20px;
   font-weight: bold;
+  color: #353535;
 }
 
 .text-ellipsis {
