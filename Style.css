@@ -235,9 +235,6 @@ header {
   display: none;
 }
 
-/*https://codepen.io/Chesswithsean/post/click-in-pure-css lien pour changer l'icon au clic
-    https://enmascript.com/articles/2019/09/26/toggle-content-on-click-without-javascript lien pour changer l'icon au click
-https://stackoverflow.com/questions/12732663/text-gradient-with-font-awesome lien pour les icon gradient*/
 .etiquette {
   position: absolute;
   top: 15px;
