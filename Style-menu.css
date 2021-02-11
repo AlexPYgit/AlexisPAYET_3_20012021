@@ -190,7 +190,7 @@ header a i {
   margin: 0%;
 }
 .container-text .text-cards p {
-  margin-top: 2%;
+  margin-top: 1%;
   margin-bottom: 0%;
   font-size: small;
 }
@@ -208,7 +208,7 @@ header a i {
 
 .validation {
   background-color: #99E2D0;
-  height: 5em;
+  height: 100%;
   width: 70px;
   border-radius: 0 15px 15px 0;
   transition: transform 0.5s;

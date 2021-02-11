@@ -21,7 +21,15 @@
           justify-content: space-around;
           align-items: center;
           padding: 0%;
-          #icon_footer{margin: 0%;
+          height: 22px;
+         .link-footer{
+             margin-bottom: 0%;
+         }
+          #icon_footer{
+              margin: 0%;
+        }
+        a:first-child{
+            margin-top:6px;
         }
         }
       }

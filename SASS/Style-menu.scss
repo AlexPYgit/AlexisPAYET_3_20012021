@@ -169,7 +169,7 @@ header {
         align-items: flex-end;
         margin: 0%;
         p{
-            margin-top: 2%;
+            margin-top: 1%;
             margin-bottom: 0%;
             font-size: small;
         }
@@ -188,7 +188,7 @@ header {
 
 .validation{
     background-color: $Tertiaire;
-    height: 5em;
+    height: 100%;
     width: 70px;
     border-radius: 0 15px 15px 0;
     transition:transform 0.5s;

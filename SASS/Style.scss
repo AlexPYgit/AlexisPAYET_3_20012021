@@ -330,12 +330,17 @@ footer {
   }
   
   footer {
+    padding: 20px 0 40px 0;
     .text_footer {
       display: flex;
       flex-direction: row;
       justify-content: space-around;
       align-items: center;
       padding: 0%;
+      #icon_footer{
+        margin-top: 4px;
+        margin-bottom: 0%;
+      }    
     }
   }
 }
