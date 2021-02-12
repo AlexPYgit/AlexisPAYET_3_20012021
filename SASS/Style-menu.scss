@@ -35,6 +35,8 @@ a{
 
 header {
     padding: 20px;
+    z-index: 1;
+    box-shadow: 1px 1px 5px 2px rgba($color: black, $alpha: 0.2);
     a{
         width: 100%;
         display: flex;
