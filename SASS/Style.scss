@@ -197,18 +197,7 @@ header {
     margin: 0%;
   }
 }
-.fa-gradient {
-  display: block;
-  background: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    from($primary),
-    to($secondaire)
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
+
 
 .icon-transform {
   position: absolute;
@@ -225,6 +214,18 @@ header {
   .fas:hover {
     cursor: pointer;
   }
+}
+.fa-gradient {
+  display: block;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from($primary),
+    to($secondaire)
+  );
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 #proof-1 {
@@ -344,7 +345,7 @@ footer {
   }
 
   footer {
-    padding: 20px 0 40px 0;
+    padding: 20px 0 50px 0;
     .text_footer {
       display: flex;
       flex-direction: row;

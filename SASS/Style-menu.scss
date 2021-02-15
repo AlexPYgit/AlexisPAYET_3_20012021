@@ -87,7 +87,6 @@ header {
 
 
 /*Section choice*/
-
     .container{
         display: flex;
         flex-direction: column;
@@ -104,29 +103,26 @@ header {
         position: relative;
         display: flex;
         flex-wrap: nowrap;
-        animation-name: move-choice;
-        animation-delay: -0.5s;
         }
         .anime-1{
             animation-name: move-choice;
-            animation-duration: 1s;
+            animation-duration: 0.5s;
             animation-delay: 0s;
-
         }
         .anime-2{
             animation-name: move-choice;
             animation-duration: 1s;
-            animation-delay: 0.1s;
+            animation-delay: 0s;
         }
         .anime-3{
             animation-name: move-choice;
-            animation-duration: 1s;
-            animation-delay: 0.2s;
+            animation-duration: 1.5s;
+            animation-delay: 0s;
         }
         .anime-4{
             animation-name: move-choice;
-            animation-duration: 0.5s;
-            animation-delay: 0.3s;
+            animation-duration: 2s;
+            animation-delay: 0s;
         }
 
         @keyframes move-choice{
@@ -151,6 +147,24 @@ header {
     }
     .fa-check-circle{
         transform: rotate(360deg);
+        transition: 0.5s;
+    }
+}
+
+.validation{
+    background-color: $Tertiaire;
+    height: 100%;
+    width: 70px;
+    border-radius: 0 15px 15px 0;
+    transition:transform 0.5s;
+    position: absolute;
+    right: -70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .fa-check-circle{
+        color: white;
+        transform:rotate (0deg);
         transition: 0.5s;
     }
 }
@@ -186,24 +200,6 @@ header {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-}
-
-.validation{
-    background-color: $Tertiaire;
-    height: 100%;
-    width: 70px;
-    border-radius: 0 15px 15px 0;
-    transition:transform 0.5s;
-    position: absolute;
-    right: -70px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    .fa-check-circle{
-        color: white;
-        transform:rotate (0deg);
-        transition: 0.5s;
-    }
 }
 
 #position-btn{

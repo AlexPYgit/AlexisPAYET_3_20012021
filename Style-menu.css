@@ -84,7 +84,7 @@ header a i {
   display: block;
   background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: transparent;
 }
 
 .icon-transform .far {
@@ -124,32 +124,30 @@ header a i {
   position: relative;
   display: flex;
   flex-wrap: nowrap;
-  animation-name: move-choice;
-  animation-delay: -0.5s;
 }
 
 .anime-1 {
   animation-name: move-choice;
-  animation-duration: 1s;
+  animation-duration: 0.5s;
   animation-delay: 0s;
 }
 
 .anime-2 {
   animation-name: move-choice;
   animation-duration: 1s;
-  animation-delay: 0.1s;
+  animation-delay: 0s;
 }
 
 .anime-3 {
   animation-name: move-choice;
-  animation-duration: 1s;
-  animation-delay: 0.2s;
+  animation-duration: 1.5s;
+  animation-delay: 0s;
 }
 
 .anime-4 {
   animation-name: move-choice;
-  animation-duration: 0.5s;
-  animation-delay: 0.3s;
+  animation-duration: 2s;
+  animation-delay: 0s;
 }
 
 @keyframes move-choice {
@@ -171,6 +169,24 @@ header a i {
 }
 .choice:hover .fa-check-circle {
   transform: rotate(360deg);
+  transition: 0.5s;
+}
+
+.validation {
+  background-color: #99E2D0;
+  height: 100%;
+  width: 70px;
+  border-radius: 0 15px 15px 0;
+  transition: transform 0.5s;
+  position: absolute;
+  right: -70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.validation .fa-check-circle {
+  color: white;
+  transform: rotate 0deg;
   transition: 0.5s;
 }
 
@@ -206,24 +222,6 @@ header a i {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-}
-
-.validation {
-  background-color: #99E2D0;
-  height: 100%;
-  width: 70px;
-  border-radius: 0 15px 15px 0;
-  transition: transform 0.5s;
-  position: absolute;
-  right: -70px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.validation .fa-check-circle {
-  color: white;
-  transform: rotate 0deg;
-  transition: 0.5s;
 }
 
 #position-btn {
