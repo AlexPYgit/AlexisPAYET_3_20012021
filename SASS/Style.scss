@@ -12,6 +12,7 @@ body {
   align-items: center;
   margin: 0%;
   width: 100%;
+  
 }
 
 a {
@@ -222,8 +223,7 @@ header {
     left top,
     left bottom,
     from($primary),
-    to($secondaire)
-  );
+    to($secondaire));
   -webkit-background-clip: text;
   color: transparent;
 }
